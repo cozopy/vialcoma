@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- <link rel="preload" href="https://www.vialcoma.com.mx/assets/css/index.min.css" as="style"> -->
-    <link href="https://www.vialcoma.com.mx/assets/css/index.css?v=2.4.0.2" rel="stylesheet" type="text/css"> 
+    <link href="https://www.vialcoma.com.mx/assets/css/index.css?v=2.5" rel="stylesheet" type="text/css"> 
 
     <link rel="shortcut icon" type="image/x-icon" href="https://www.vialcoma.com.mx/assets/media/favicon.ico">
 
@@ -39,6 +39,31 @@
   </head>
 
   <body>
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your plugin de chat code -->
+    <div class="fb-customerchat"
+      attribution="biz_inbox"
+      page_id="1675293126023150">
+    </div>
+    
     <span id="loading"></span>
 
     <nav class="navbar navbar-expand-md fixed-top">
@@ -138,8 +163,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="https://www.vialcoma.com.mx/assets/js/language.js?v=2.4.0.2" type="text/javascript"></script>
-    <script src="https://www.vialcoma.com.mx/assets/js/index.js?v=2.4.0.2" type="text/javascript"></script>
+    <script src="https://www.vialcoma.com.mx/assets/js/language.js?v=2.5" type="text/javascript"></script>
+    <script src="https://www.vialcoma.com.mx/assets/js/index.js?v=2.5" type="text/javascript"></script>
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script id="siteTag1" async src="https://www.googletagmanager.com/gtag/js?id=UA-106834190-1"></script>
